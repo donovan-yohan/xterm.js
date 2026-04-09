@@ -48,9 +48,18 @@ git commit -m "chore: rebuild after upstream merge"
 git push
 ```
 
-then in relay-ide, update the pinned commit hash in `package.json`:
+then tag and push the new version:
+
+```bash
+git tag v6.0.0-relay.<next>
+git push origin v6.0.0-relay.<next>
+```
+
+tags follow the pattern `v<upstream-version>-relay.<patch>` (e.g. `v6.0.0-relay.1`, `v6.0.0-relay.2`). bump the relay patch number for local changes; bump the upstream version when rebasing onto a new upstream release.
+
+then in relay-ide, update the pinned tag in `package.json`:
 
 ```bash
 rm -rf node_modules/@xterm/xterm
-npm install @xterm/xterm@github:donovan-yohan/xterm.js#<new-commit-hash>
+npm install @xterm/xterm@github:donovan-yohan/xterm.js#v6.0.0-relay.<next>
 ```
