@@ -40,6 +40,14 @@ src/**/*.test.js.map
 # Whitelist - typings/
 !typings/*.d.ts
 
+# Whitelist - addons/addon-webgpu/
+!addons/addon-webgpu/package.json
+!addons/addon-webgpu/lib/**/*.js
+!addons/addon-webgpu/lib/**/*.js.map
+!addons/addon-webgpu/lib/**/*.mjs
+!addons/addon-webgpu/lib/**/*.mjs.map
+!addons/addon-webgpu/typings/*.d.ts
+
 # Blacklist - (normal behavior) these will override any whitelist
 headless/
 typings/xterm-headless.d.ts
