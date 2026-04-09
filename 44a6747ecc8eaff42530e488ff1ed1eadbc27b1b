@@ -1,0 +1,25 @@
+FORK.md
+  3a2bbcca44183128 51,54-60,64
+CLAUDE.md
+  3a2bbcca44183128 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.6",
+  "base_commit_sha": "44a6747ecc8eaff42530e488ff1ed1eadbc27b1b",
+  "prompts": {
+    "3a2bbcca44183128": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cc3ed344-6754-4fe2-917e-c5681bf4ac7d",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Donovan Yohan",
+      "messages": [],
+      "total_additions": 60,
+      "total_deletions": 2,
+      "accepted_lines": 60,
+      "overriden_lines": 0
+    }
+  }
+}
